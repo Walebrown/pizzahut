@@ -21,7 +21,7 @@ const Navbar = () => {
 
             <div className={styles.item}>
                 <ul className={styles.list}>
-                    <Link href='/'  passHref>
+                    <Link href='/'  passHref='' >
                     <li className={styles.listItem}> Homepage</li>
                     </Link>
                     
@@ -34,7 +34,7 @@ const Navbar = () => {
 
                 </ul>
             </div>
-            <Link href='/cart' passhref>
+            <Link href='/cart' passhref =''>
             <div className={styles.item}>
                 <div className={styles.cart}>
                     <Badge badgeContent={quantity} color='secondary'>

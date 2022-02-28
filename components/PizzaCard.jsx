@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from '../styles/PizzaCard.module.css'
 import Link from "next/link";
+import Image from 'next/image'
 
 const PizzaCard = ({pizza}) => {
     return (
         <div className={styles.container}>
             <Link href={`/product/${pizza._id}`} passHref>
-            <img src={pizza.img} alt=""  width='300' height='300'/>
+            <Image src={pizza.img} alt=""  width='300' height='300'/>
             </Link>
 
             

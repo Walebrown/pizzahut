@@ -1,10 +1,11 @@
-import axios from 'axios'
+
 import Head from 'next/head'
 import Featured from '../components/Featured'
 import Footer from '../components/Footer'
 import PizzaCard from '../components/PizzaCard'
 import ProductList from '../components/ProductList'
 import styles from '../styles/Home.module.css'
+import axios from 'axios'
 
 export default function Home({pizzalist}) {
   return (
@@ -12,7 +13,6 @@ export default function Home({pizzalist}) {
       <Head>
         <title>Pizza Hut</title>
         <meta name="description" content="Best Pizza in town" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Featured/>
